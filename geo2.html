@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Geolocation map bing</title>
+
+		<script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+		<script src="script2.js"></script>
+		
+		<style type="text/css">
+		body {
+			padding: 0px;
+			margin: 0px;
+		}
+		</style>
+	</head>
+
+	<!-- <body onload="LetsBegin()"> -->
+	<body>
+
+	<div style="margin:0 auto; width:300px; border: 1px solid red;">
+		<h3>Geolocation map bing</h3>
+		<button onclick="LocateMe()">Lokalizuj</button>
+		
+		<button onclick="Search()">Szukaj</button>
+		<br/>
+		<span id="accuracy"></span>
+	</div>
+
+	<section>
+		<div id='map' style="position:relative; width:800px; height:500px; margin:0 auto;"></div>
+	</section>
+	
+	</body>
+</html>
